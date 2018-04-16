@@ -8,14 +8,14 @@
     1.2 练习
     思考题
 
-## 第二章：
+## 第二章 -- 算法基础：
     
 ### A）排序问题 -- 遇到元素排序问题时使用
 ##### 1）插入排序
- 
-    [2.1 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/test_1)
-    2.2 练习
-      
+
+###### [2.1 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/test_1)
+###### 2.2 练习
+
 ##### 2）归并排序
       
     2.3 练习
