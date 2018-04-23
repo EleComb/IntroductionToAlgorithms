@@ -11,13 +11,13 @@
 ## 第二章 -- 算法基础：
     
 ### A）排序问题 -- 遇到元素排序问题时使用
-##### 1）插入排序
+##### 1）[插入排序](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_2_TheBaseOfAlgo/InsertSort.py)
 
 ###### [2.1 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/test_1)
-###### 2.2 练习
+###### [2.2 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/test_2)
 
-##### 2）归并排序
-      
+##### 2）[归并排序](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_2_TheBaseOfAlgo/MergeSort.py)
+  
     2.3 练习
     
 ## 第三章：
