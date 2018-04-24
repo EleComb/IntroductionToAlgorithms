@@ -13,11 +13,11 @@ def insert_sort(a):
     return a
 
 
-a = [85, 33, 42, 13, 46, 63, 2, 15, 100]
-a = insert_sort(a)
-print(a)
-
-# in python local :
-a = [85, 33, 42, 13, 46, 63, 2, 15, 100]
-a = sorted(a)
-print(a)
+# a = [85, 33, 42, 13, 46, 63, 2, 15, 100]
+# a = insert_sort(a)
+# print(a)
+#
+# # in python local :
+# a = [85, 33, 42, 13, 46, 63, 2, 15, 100]
+# a = sorted(a)
+# print(a)
