@@ -3,6 +3,7 @@ import math
 
 # divide
 def divide_search(a, p, r, v):
+    # if use minus, q = p + q
     q = math.floor((r-p)/2)
     if v == a[p]:
         return p
