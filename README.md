@@ -18,7 +18,7 @@
 
 ##### 2）[归并排序](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_2_TheBaseOfAlgo/MergeSort.py)
   
-    2.3 练习
+###### [2.3 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/test_3)
     
 ## 第三章：
     

@@ -1,7 +1,7 @@
 import math
 
 
-def merge(A, p , q, r):
+def merge(A, p, q, r):
     '''
     make two Ordinal sequence into one ordinal sequence
     :param A: A is the group of pair ordinal sequence
@@ -29,11 +29,11 @@ def merge(A, p , q, r):
         else:
             A[k] = R[j]
             j += 1
-    return A
 
 
 # A = [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 5, 7, 1, 2, 3, 6, 0]
-# print(merge(A, 9, 12, 16))
+# merge(A, 9, 12, 16)
+# print(A)
 
 def merge_sort(A, p, r):
     if p < r:
@@ -41,6 +41,7 @@ def merge_sort(A, p, r):
         merge_sort(A, p, q)
         merge_sort(A, q + 1, r)
         merge(A, p, q, r)
+
 
 A = [5, 2, 4, 7, 1, 3, 2, 6]
 merge_sort(A, 0, len(A) - 1)
