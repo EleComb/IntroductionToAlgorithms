@@ -26,16 +26,16 @@
     3.2 练习
     思考题
     
-## 第四章：
+## 第四章： -- 分治策略：
   
-##### A）最大子数组问题 -- 遇到寻找集合内最大子集合时使用
-    
-###### 4.1.1）暴力求解方法
-###### 4.1.2）分治策略求解方法
- 
-    4.1练习
-   
-###### 4.2.1）矩阵乘法的Strassen算法
+### A）最大子数组问题 -- 遇到寻找集合内最大子集合时使用
+
+##### 1）[分治策略求解方法](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_4_DivideStrategy/FindMaxCrossingSubarray)
+
+###### [4.1 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_4_DivideStrategy/test_1)
+    test_5：存在最大子数组的线性时间算法
+
+###### 2）矩阵乘法的Strassen算法
   
     4.2 练习
     
