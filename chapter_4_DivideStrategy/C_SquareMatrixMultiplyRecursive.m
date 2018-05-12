@@ -1,7 +1,7 @@
 % 使用4个下标确定一个矩阵的内容 [x0 -> x1][y0 -> y1]
 function C = C_SquareMatrixMultiplyRecursive(A, B, a11, a12, a21, a22, b11, b12, b21, b22)
     n = a12 - a11 + 1
-    d = log2(n) - 1;
+    d = n/2-1;
     C = zeros(n);
     if n <= 0 
         return;
