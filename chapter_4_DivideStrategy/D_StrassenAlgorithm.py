@@ -2,16 +2,6 @@ import numpy as np
 import math
 
 
-# Test tools
-# A = np.array([[1,2], [2,1]])
-# B = np.array([[1,3], [3,5]])
-# C = np.zeros((4, 4))
-# C[0:2,0:2] = A
-# print(C)
-# print(A + B)
-
-
-# we should just use index of A, B, C . without initial more matrix
 def square_matrix_multiply_recursive(A, B,
                                      L1,
                                      L2):
@@ -67,5 +57,3 @@ L1 = [0, n-1, 0, n-1]
 L2 = [0, n-1, 0, n-1]
 ret = square_matrix_multiply_recursive(A, B, L1, L2)
 print(ret)
-
-
