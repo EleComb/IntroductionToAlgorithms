@@ -1,6 +1,7 @@
 # IntroductionToAlgorithms
-算法导论IntroductionToAlgorithms 学习代码python版，已写的会增加跳转链接，保证每个已被创建的文件夹下一定存在文件。
-如果有心情可能还会有心得什么的，作者是一个又笨又懒的人，所以更新很慢:) 有争议欢迎指出=w=
+算法导论IntroductionToAlgorithms 学习代码python版，已写的会增加跳转链接，保证每个已被创建的文件夹下一定存在文件，不会没写代码还放个文件，浪费大家时间ww
+
+作者更新很慢:) 有争议欢迎指出=w=
 
 ## 第一章：
 
@@ -8,35 +9,36 @@
     1.2 练习
     思考题
 
-## 第二章 -- 算法基础：
+## [第二章](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo) -- 算法基础：
     
 ### A）排序问题 -- 遇到元素排序问题时使用
-##### 1）[插入排序](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_2_TheBaseOfAlgo/InsertSort.py)
+##### 1）[插入排序](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_2_TheBaseOfAlgo/A_InsertSort.py)
 
 ###### [2.1 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/test_1)
 ###### [2.2 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/test_2)
 
-##### 2）[归并排序](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_2_TheBaseOfAlgo/MergeSort.py)
+##### 2）[归并排序](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_2_TheBaseOfAlgo/B_MergeSort.py)
   
 ###### [2.3 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/test_3)
-    
+###### [思考题](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_2_TheBaseOfAlgo/thinking)
+
 ## 第三章：
     
     3.1 练习
     3.2 练习
     思考题
     
-## 第四章： -- 分治策略：
+## [第四章](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_4_DivideStrategy)： -- 分治策略：
   
 ### A）最大子数组问题 -- 遇到寻找集合内最大子集合时使用
 
-##### 1）[分治策略求解方法](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_4_DivideStrategy/FindMaxCrossingSubarray)
+##### 1）[分治策略求解方法](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_4_DivideStrategy/A_FindMaxCrossingSubarray.py)
 
 ###### [4.1 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_4_DivideStrategy/test_1)
     test_5：存在最大子数组的线性时间算法
+##### 2.1）[SquareMatrixMultiplyRecursive](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_4_DivideStrategy/B_SquareMatrixMultiply.py)
+##### 2.2）[矩阵乘法的Strassen算法](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_4_DivideStrategy/D_StrassenAlgorithm.py)
 
-###### 2）矩阵乘法的Strassen算法
-  
     4.2 练习
     
 ###### 4.3.1）用代入法求解递归式 
