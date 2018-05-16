@@ -2,9 +2,7 @@ import numpy as np
 import math
 
 
-def square_matrix_multiply_recursive(A, B,
-                                     L1,
-                                     L2):
+def square_matrix_multiply_recursive(A, B, L1, L2):
     n = int(L1[1]) - int(L1[0]) + 1
     d = math.floor(n / 2 - 1)  # the half length of matrix width/height minus one
     # if the matrix's length is 1, then set whose value
@@ -41,28 +39,14 @@ def square_matrix_multiply_recursive(A, B,
     return C
 
 
-A = np.array([[1, 2, 3, 4, 1, 2, 3, 4],
-              [3, 4, 1, 2, 1, 2, 3, 4],
-              [2, 1, 3, 4, 1, 2, 3, 4],
-              [4, 3, 2, 1, 1, 2, 3, 4],
-              [1, 2, 3, 4, 1, 2, 3, 4],
-              [1, 2, 3, 4, 1, 2, 3, 4],
-              [1, 2, 3, 4, 1, 2, 3, 4],
-              [1, 2, 3, 4, 1, 2, 3, 4]])
-B = np.array([[5, 6, 7, 8, 5, 6, 7, 8],
-              [8, 7, 6, 5, 5, 6, 7, 8],
-              [5, 6, 8, 7, 5, 6, 7, 8],
-              [7, 8, 6, 5, 5, 6, 7, 8],
-              [7, 8, 6, 5, 5, 6, 7, 8],
-              [7, 8, 6, 5, 5, 6, 7, 8],
-              [7, 8, 6, 5, 5, 6, 7, 8],
-              [7, 8, 6, 5, 5, 6, 7, 8]])
 n = 8
+A = np.random.randint(0, 100, size=[n, n])
+B = np.random.randint(0, 100, size=[n, n])
 
-# A = [[1,2,3,4], [2,1,3,4], [4,3,2,1], [1,3,2,4]]
-# B = [[1,3,5,6], [3,5,1,6], [6,1,3,5], [5,1,6,3]]
 L1 = [0, n - 1, 0, n - 1]
 L2 = [0, n - 1, 0, n - 1]
 ret = square_matrix_multiply_recursive(A, B, L1, L2)
-# ret = np.dot(A, B)
+# ret2 = np.dot(A, B)
+# print(ret2)
 print(ret)
+
