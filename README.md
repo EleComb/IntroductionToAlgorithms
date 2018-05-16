@@ -36,8 +36,9 @@
 
 ###### [4.1 练习](https://github.com/EleComb/IntroductionToAlgorithms/tree/master/chapter_4_DivideStrategy/test_1)
     test_5：存在最大子数组的线性时间算法
-##### 2.1）[SquareMatrixMultiplyRecursive](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_4_DivideStrategy/B_SquareMatrixMultiply.py)
-##### 2.2）[矩阵乘法的Strassen算法](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_4_DivideStrategy/D_StrassenAlgorithm.py)
+##### 2.1）[O(n^3)算法](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_4_DivideStrategy/B_SquareMatrixMultiply.py)
+##### 2.2）[SquareMatrixMultiplyRecursive](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_4_DivideStrategy/C_SquareMatrixMultiplyRecursive.py)
+##### 2.3）[矩阵乘法的Strassen算法](https://github.com/EleComb/IntroductionToAlgorithms/blob/master/chapter_4_DivideStrategy/D_StrassenAlgorithm.py)
 
     4.2 练习
     
