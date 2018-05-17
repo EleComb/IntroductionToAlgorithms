@@ -2,7 +2,7 @@ import numpy as np
 import math
 
 
-def square_matrix_multiply_recursive(A, B, L1, L2):
+def strassen_algorithm(A, B, L1, L2):
     n = int(L1[1]) - int(L1[0]) + 1
     d = math.floor(n / 2 - 1)  # the half length of matrix width/height minus one
     # if the matrix's length is 1, then set whose value
@@ -21,16 +21,16 @@ def square_matrix_multiply_recursive(A, B, L1, L2):
         b12 = [int((L2[0] + L2[1] + 1) / 2), L2[1], L2[2], L2[2] + d]
         b22 = [int((L2[0] + L2[1] + 1) / 2), L2[1], int((L2[2] + L2[3] + 1) / 2), L2[3]]
 
-        P1 = square_matrix_multiply_recursive(A, B, a11, b12) - square_matrix_multiply_recursive(A, B, a11, b22)
-        P2 = square_matrix_multiply_recursive(A, B, a11, b22) + square_matrix_multiply_recursive(A, B, a12, b22)
-        P3 = square_matrix_multiply_recursive(A, B, a21, b11) + square_matrix_multiply_recursive(A, B, a22, b11)
-        P4 = square_matrix_multiply_recursive(A, B, a22, b21) - square_matrix_multiply_recursive(A, B, a22, b11)
-        P5 = square_matrix_multiply_recursive(A, B, a11, b11) + square_matrix_multiply_recursive(A, B, a11, b22) + \
-             square_matrix_multiply_recursive(A, B, a22, b11) + square_matrix_multiply_recursive(A, B, a22, b22)
-        P6 = square_matrix_multiply_recursive(A, B, a12, b21) + square_matrix_multiply_recursive(A, B, a12, b22) - \
-             square_matrix_multiply_recursive(A, B, a22, b21) - square_matrix_multiply_recursive(A, B, a22, b22)
-        P7 = square_matrix_multiply_recursive(A, B, a11, b11) + square_matrix_multiply_recursive(A, B, a11, b12) - \
-             square_matrix_multiply_recursive(A, B, a21, b11) - square_matrix_multiply_recursive(A, B, a21, b12)
+        P1 = strassen_algorithm(A, B, a11, b12) - strassen_algorithm(A, B, a11, b22)
+        P2 = strassen_algorithm(A, B, a11, b22) + strassen_algorithm(A, B, a12, b22)
+        P3 = strassen_algorithm(A, B, a21, b11) + strassen_algorithm(A, B, a22, b11)
+        P4 = strassen_algorithm(A, B, a22, b21) - strassen_algorithm(A, B, a22, b11)
+        P5 = strassen_algorithm(A, B, a11, b11) + strassen_algorithm(A, B, a11, b22) + \
+             strassen_algorithm(A, B, a22, b11) + strassen_algorithm(A, B, a22, b22)
+        P6 = strassen_algorithm(A, B, a12, b21) + strassen_algorithm(A, B, a12, b22) - \
+             strassen_algorithm(A, B, a22, b21) - strassen_algorithm(A, B, a22, b22)
+        P7 = strassen_algorithm(A, B, a11, b11) + strassen_algorithm(A, B, a11, b12) - \
+             strassen_algorithm(A, B, a21, b11) - strassen_algorithm(A, B, a21, b12)
 
         C[0:d + 1, 0:d + 1] = P5 + P4 - P2 + P6
         C[0:d + 1, int(n / 2):int(n / 2 + d + 1)] = P1 + P2
@@ -45,7 +45,7 @@ B = np.random.randint(0, 100, size=[n, n])
 
 L1 = [0, n - 1, 0, n - 1]
 L2 = [0, n - 1, 0, n - 1]
-ret = square_matrix_multiply_recursive(A, B, L1, L2)
+ret = strassen_algorithm(A, B, L1, L2)
 # ret2 = np.dot(A, B)
 # print(ret2)
 print(ret)
